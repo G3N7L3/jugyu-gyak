@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="styles.css" media="all"/>
+		<link rel="stylesheet" type="text/css" href="css/mainprint.css" media="print"/>
+		<title>SZTE Juhász Gyula Gyakorló Általános és Alapfokú Művészeti Iskolája, Napközi Otthonos Óvodája</title>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet"> 
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script type="text/javascript" src="ajbani.js" charset="utf-8"></script>
+		<script type="text/javascript" src="ajfunk.js"></script>
+		<script type="text/javascript" src="js/validator.js"></script>
+		<script type="text/javascript" src="js/tovabb.img" charset=utf-8></script>
+</head>
+<body>
+
+
+<script>
+	var d = new Date();
+	var y = d.getFullYear();
+	var m = d.getMonth()+1;
+	var link = y+"*"+m+"*i";
+	document.getElementById("naptar").innerHTML = calendar(link);
+</script>
+
+
+
+<div class="cointainer">
+	<div class="nav-wrapper">
+		<div class="left-side">
+			<div class="nav-link-wrapper active-nav-link">
+				<a href="index.html"> Átalános Iskola</a>
+			</div>
+			
+
+			<div class="nav-link-wrapper">
+				<a href="http://www.gyak.jgypk.u-szeged.hu/index.php?menu=art">Művészeti Iskola</a>
+			</div>
+
+			<div class="nav-link-wrapper">
+				<a href="http://www.gyak.jgypk.u-szeged.hu/index.php?menu=kindg">Óvoda</a>
+			</div>
+		</div>
+
+		<div class="right-side">
+			<div class="brand">
+				<div>SZTE Juhász Gyula Gyakorló</div>
+			</div>
+		</div>
+	 </div>
+
+
+	 <div class="content-wrapper">
+		 <div class="portfolio-items-wrapper">
+
+			
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-img-background" style="background-image:url(img/virus.jpg)"></div>
+				<div class="img-text-wrapper">	
+					<div class="subtitle">
+						Tájékoztatás és hatályos intézkedések
+					</div>
+				</div>
+			</div>
+
+
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-img-background" style="background-image:url(img/news.jpg)"></div>
+				<div class="img-text-wrapper">
+					<div class="logo-wrapper">
+						<img src="img/icon/open-devos.png">
+					</div>
+					<div class="subtitle">
+						Aktualitások <br> Felhívások, értesítések, friss hírek
+					</div>
+				</div>
+			</div>
+
+
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-img-background" style="background-image:url(img/tabs.jpg)"></div>			
+				<div class="img-text-wrapper">
+					<div class="logo-wrapper">
+						<img src="img/icon/edutechional.png">
+					</div>
+					<div class="subtitle">
+						E-napló, tananyagok, publikációk
+					</div>
+				</div>
+			</div>
+
+
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-img-background" style="background-image:url(img/contactus.jpg)"></div>
+				<div class="img-text-wrapper">
+					<div class="logo-wrapper">
+						<img src="img/icon/devcamp.png">
+					</div>
+					<div class="subtitle">
+						Kapcsolat, elérhetőségek.
+					</div>
+				</div>
+			</div>
+
+
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-img-background" style="background-image:url(img/lunch.jpg)"></div>			
+				<div class="img-text-wrapper">
+					<div class="logo-wrapper">
+						<img src="img/icon/toastability.png">
+					</div>
+					<div class="subtitle">
+						Étkeztetés
+					</div>
+				</div>
+			</div>
+
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-img-background" style="background-image:url(img/doc.jpg)"></div>
+				<div class="img-text-wrapper">
+					<div class="logo-wrapper">
+						<img src="img/icon/shop-hacker.png">
+					</div>
+					<div class="subtitle">
+						Iskolaorvos
+					</div>
+				</div>
+			</div>
+
+
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-img-background" style="background-image:url(img/start.jpg)"></div>			
+				<div class="img-text-wrapper">
+					<div class="logo-wrapper">
+						<img src="img/icon/edutechional.png">
+					</div>
+					<div class="subtitle">
+						Beiratkozás, továbbtanulás
+					</div>
+				</div>
+			</div>
+
+
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-img-background" style="background-image:url(img/tan-kepz.jpg)"></div>
+				<div class="img-text-wrapper">
+					<div class="logo-wrapper">
+						<img src="img/icon/dailysmarty.png">
+					</div>
+					<div class="subtitle">
+						Tanító- és tanárképzés
+					</div>
+				</div>
+			</div>
+
+<a href="http://www.gyak.jgypk.u-szeged.hu/">
+			<div class="portfolio-item-wrapper">
+				<div class="portfolio-img-background" style="background-image:url(img/back.jpg)"></div>
+				<div class="img-text-wrapper">
+					<div class="subtitle">
+						Vissza a navigációs oldalra.
+					</div>
+				</div>
+			</div>
+</a>
+
+		 </div>
+	 </div>
+  
+</div>
+</body>
+<script>
+const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+portfolioItems.forEach(portfolioItem => {
+	portfolioItem.addEventListener('mouseover', () => { 
+		portfolioItem.childNodes[1].classList.add('img-darken');
+	})
+
+	portfolioItem.addEventListener('mouseout', () => { 
+		portfolioItem.childNodes[1].classList.remove('img-darken');
+	})
+})
+</script>
+
+
+<div class="footer">
+	<p>&copy; SZTE Juhász Gyula Gyakorló Általános és Alapfokú Művészeti Iskolája, Napközi Otthonos Óvodája</p>
+</div> 
+</body>
+</html>
